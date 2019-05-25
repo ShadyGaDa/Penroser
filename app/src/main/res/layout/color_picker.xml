@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--xmlns:jf="http://schemas.android.com/apk/res/org.jf.Penroser"
+xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical">
+    <afzkl.development.mColorPicker.views.ColorPickerView android:id="@+id/color_picker"
+                                                          android:layout_height="wrap_content"
+                                                          android:layout_width="fill_parent"/>
+    <org.jf.Penroser.PenroserGLView android:id="@+id/penroser_view"
+                                    android:layout_height="fill_parent"
+                                    android:layout_width="fill_parent"
+                                    android:layout_below="@+id/color_picker"/>
+    <Button android:id="@+id/ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ok"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"/>
+</RelativeLayout>
